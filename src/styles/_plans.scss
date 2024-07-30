@@ -1,6 +1,10 @@
 .plans{
     padding: 5.6vw;
 
+    .button{
+        margin-top: 16px;
+    }
+
     h2{
         text-align: center;
     }
@@ -9,6 +13,10 @@
         margin-top: 50px;
         display: flex;
         justify-content: space-around;
+
+        @media (max-width:768px){
+            display: block;
+        }
 
         &__item{
             max-width: 380px;
@@ -24,6 +32,10 @@
 
             img{
                 height: 83px;
+                @media (max-width:768px) {
+                    max-width: 245px;
+                    height: 70px;
+                }
             }
 
             strong{

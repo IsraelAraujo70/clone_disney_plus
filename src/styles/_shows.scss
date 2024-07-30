@@ -8,6 +8,11 @@
         grid-template-columns: 1fr 1fr 1fr;
         gap: 24px;
         margin-top: 44px;
+
+        @media (max-width: 768px){
+            grid-template-columns: 1fr 1fr
+        }
+
         &--is-active{
             display: grid;
         }
@@ -35,6 +40,16 @@
             &--is-active{
                 border-color: var.$corTextoSecundario;
             }
+
+            @media (max-width: 768px) {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            white-space: nowrap;
+            overflow-x: scroll;
+            padding-left: 20px;
         }
     }
 }
